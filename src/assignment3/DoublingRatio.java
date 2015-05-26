@@ -1,4 +1,4 @@
-package a3;
+package assignment3;
 
 
 import edu.princeton.cs.algs4.ResizingArrayStack;

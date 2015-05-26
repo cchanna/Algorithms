@@ -1,4 +1,4 @@
-package a3;
+package assignment3;
 import static org.junit.Assert.*;
 
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class A3Test {
+public class Assignment3Test {
 
 	private TwoStackQueue<String> q;
 	

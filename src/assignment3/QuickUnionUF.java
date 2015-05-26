@@ -1,4 +1,4 @@
-package a3;
+package assignment3;
 
 import static edu.princeton.cs.introcs.StdOut.*;
 
