@@ -1,4 +1,4 @@
-package a8;
+package assignment8;
 
 /***************************************************************
  *  Compilation:  javac RabinKarp.java

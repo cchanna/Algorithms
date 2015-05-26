@@ -1,13 +1,16 @@
-package a8;
+package assignment8;
 
 import static edu.princeton.cs.introcs.StdRandom.*;
-import static a8.RabinKarp2D.*;
+import static assignment8.RabinKarp2D.*;
+
 import java.util.Arrays;
+
 import static org.junit.Assert.*;
+
 //import org.junit.Before;
 import org.junit.Test;
 
-public class A8Test {
+public class Assignment8Test {
 
 	private RabinKarp2D matcher;
 	

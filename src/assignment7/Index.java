@@ -1,4 +1,4 @@
-package a7;
+package assignment7;
 
 import java.io.File;
 

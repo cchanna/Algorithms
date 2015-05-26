@@ -1,4 +1,4 @@
-package a7;
+package assignment7;
 
 public class GridPath {
 	public final static boolean DOWN = false, RIGHT = true;

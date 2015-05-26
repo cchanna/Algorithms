@@ -1,14 +1,12 @@
-package a7;
+package assignment7;
 import static org.junit.Assert.*;
-
-//import java.util.Arrays;
 
 import org.junit.Test;
 
 import static edu.princeton.cs.introcs.StdRandom.*;
-import a7.GridPath;
+import assignment7.GridPath;
 
-public class A7Test {
+public class Assignment7Test {
 
 	public static final boolean D = GridPath.DOWN;
 

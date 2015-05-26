@@ -1,4 +1,4 @@
-package a8;
+package assignment8;
 
 /** Las Vegas variant of 2-dimensional pattern matching, using a generalization of the Rabin-Karp algorithm. Based on the implementation provided in Sedgewick & Wayne, Algorithms (Fourth Edition). */
 public class RabinKarp2D {
