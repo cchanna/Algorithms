@@ -1,7 +1,6 @@
 package puzzleSiege;
 
 import java.awt.Graphics2D;
-//import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 /**
@@ -17,11 +16,8 @@ public abstract class Unit extends Tile {
 	private static BufferedImage[] colors;
 	private static BufferedImage[] levelArt;
 
-	// These are protected values that all units share.
 	protected boolean allied;
 	protected int damage, level;
-
-	// protected int frame;
 
 	/**
 	 * Sets the <code>Unit</code>'s art to the correct value.

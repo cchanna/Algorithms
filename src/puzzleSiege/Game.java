@@ -21,26 +21,11 @@ public class Game {
 		LEFT, RIGHT
 	};
 
-//	private Turn turn;
-//	private Turn previousTurn;
-
 	/**
 	 * Builds the game by loading all of the art, creating new
 	 * <code>Actor</code>s, and creating the <code>Board</code>.
 	 */
 	public Game() {
-//		loadArt();
-//		turn = Turn.RIGHT;
-		/*
-		 * Tile[][] setup = new Tile[Board.SIZE][Board.SIZE]; for (int r = 0; r
-		 * < Board.SIZE; r++) { for (int c = 0; c < Board.SIZE; c++) { if (r % 2
-		 * == 0) { if (c % 2 == 0) setup[r][c] = new Tile(Tile.SWORD); else
-		 * setup[r][c] = new Tile(Tile.ARROW); } else if (c % 2 == 0)
-		 * setup[r][c] = new Tile(Tile.COIN); else setup[r][c] = new
-		 * Tile(Tile.RALLY); } } setup[4][3] = new Knight(); setup[4][12] = new
-		 * Goblin();
-		 */
-		// board = new Board();
 		board = new Board();
 		player = new Player(board);
 		computer = new Computer(board);
@@ -82,7 +67,6 @@ public class Game {
 	 */
 	protected void takeTurn(Actor actor) {
 		currentPlayer = actor;
-//		System.out.println(currentPlayer);
 		actor.beginTurn();
 	}
 

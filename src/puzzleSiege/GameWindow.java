@@ -4,7 +4,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.*;
 import java.io.*;
-//import java.util.*;
 import javax.imageio.ImageIO;
 import javax.swing.Timer;
 import javax.swing.*;
@@ -33,33 +32,7 @@ class GameWindow extends JPanel {
 
 	BufferedImage image;
 
-	// private int width, height;
 	public GameWindow() {
-		/*
-		 * String title, int width, int height, int x, int y super(title); //
-		 * call the Frame constructor, on which this object is based
-		 * 
-		 * setLocation(x, y);
-		 * 
-		 * // calculate offsets for border, title bar, etc. setVisible(true);
-		 * Insets insets = getInsets(); leftOffset = insets.left; topOffset =
-		 * insets.top;
-		 * 
-		 * // set the size to be big enough for all that
-		 * setSize(width+leftOffset+insets.right,
-		 * height+topOffset+insets.bottom);
-		 * 
-		 * // set the window to close, when the user hits the close button
-		 * addWindowListener(new WindowAdapter() {public void
-		 * windowClosing(WindowEvent e) {dispose();}});
-		 * 
-		 * // define the image inside the window image = new
-		 * BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-		 * 
-		 * 
-		 * // makes a new Graphics2D object (the "pen"); pen = getGraphics2D();
-		 */
-
 		setBackground(Color.WHITE);
 
 		ActionListener tick = new ActionListener() { // defines the action taken
@@ -71,8 +44,6 @@ class GameWindow extends JPanel {
 		};
 
 		timer = new Timer(34, tick);
-
-//		game = new Game();
 
 		addMouseListener(new MouseAdapter() {
 			// The mouse listener simply requests focus when the user
@@ -103,17 +74,7 @@ class GameWindow extends JPanel {
 			}
 		});
 
-		instructions = new Instructions();
-		// addKeyListener(new KeyAdapter() {
-		// public void keyPressed(KeyEvent evt) {
-		// int keyCode = evt.getKeyCode();
-		// if (game != null) game.getInput(keyCode,true);
-		// }
-		// public void keyReleased(KeyEvent evt) {
-		// int keyCode = evt.getKeyCode();
-		// if (game != null) game.getInput(keyCode,false);
-		// }
-		// } );
+		instructions = new Instructions(); // throws up an instructions overlay
 	}
 
 	protected void paintComponent(Graphics g) {
@@ -129,20 +90,6 @@ class GameWindow extends JPanel {
 		}
 	}
 
-	/*
-	 * s // just paint a big rectangle on the background, of the given color
-	 * public void paintBackground(Color color) { Graphics pen =
-	 * image.getGraphics(); pen.setColor(color); pen.fillRect(0, 0,
-	 * image.getWidth(), image.getHeight()); }
-	 * 
-	 * // paints the image to the screen, whenever the window needs it public
-	 * void paint(Graphics pen) pen.drawImage(image, leftOffset, topOffset,
-	 * null); }
-	 * 
-	 * // get a Graphics2D connection to the image that's being painted to the
-	 * screen public Graphics2D getGraphics2D() { return
-	 * (Graphics2D)image.getGraphics(); }
-	 */
 	// load up an image
 	public static BufferedImage loadImage(String filename) {
 		try {
@@ -197,11 +144,4 @@ class GameWindow extends JPanel {
 		}
 		return tiles;
 	}
-	/*
-	 * // output the window as a PNG file public void writeAsPNG(String
-	 * filename) { // output to disk try { ImageIO.write(image, "PNG", new
-	 * File(filename)); } catch (IOException ex) {
-	 * System.err.println("Had trouble writing " +filename+"."); System.exit(1);
-	 * } }
-	 */
 }

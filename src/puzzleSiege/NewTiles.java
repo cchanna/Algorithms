@@ -12,8 +12,6 @@ import java.util.Hashtable;
  * @version 1.2 11/18/2013
  */
 public class NewTiles {
-
-	// private Hashtable<Integer, Queue<Tile>> tiles;
 	private Hashtable<Integer, Queue<Unit>> units;
 	private int[] newTiles;
 	private int[] incoming;

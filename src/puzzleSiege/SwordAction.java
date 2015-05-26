@@ -2,7 +2,6 @@ package puzzleSiege;
 
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
-//import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 
 /**
@@ -22,7 +21,6 @@ public class SwordAction implements Action {
 
 	private static BufferedImage[] art;
 	private int x, y;
-	// private AffineTransformOp rotate;
 	private AffineTransform rotate;
 
 	/**
@@ -91,7 +89,6 @@ public class SwordAction implements Action {
 
 	@Override
 	public void draw(Graphics2D pen) {
-		// pen.drawImage(art[0],rotate,x,y);
 		pen.drawImage(art[0], rotate, null);
 	}
 

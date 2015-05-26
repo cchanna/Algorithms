@@ -1,7 +1,5 @@
 package puzzleSiege;
 
-//import static edu.princeton.cs.introcs.StdRandom.uniform;
-
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -17,7 +15,6 @@ public class Player implements Actor {
 
 	public static final int HEALTH_X = Board.X - Tile.SIZE * 3,
 			HEALTH_Y = Board.Y + 16;
-	// public static final int COIN_X, COIN_Y;
 	public static final int HORDE_X = Board.X - Tile.SIZE * 3,
 			HORDE_Y = Board.Y;
 	private int health, score;
@@ -103,7 +100,6 @@ public class Player implements Actor {
 	}
 	
 	public void addUnit(int level, int r) {
-//		horde.add(new Knight(level));
 		board.addUnit(r, new Knight(level));
 	}
 	
@@ -119,9 +115,7 @@ public class Player implements Actor {
 		pen.drawString(score + "", Board.X + 48, Board.Y - 48);
 	}
 
-	// TODO actual art for score
 	public static void loadArt(String path) {
 		healthArt = GameWindow.loadImageAsTiles(path + "health.png", Tile.SIZE);
-		// /coinArt = GameWindow.loadImage("src\\puzzleSiege\\coin.png");
 	}
 }

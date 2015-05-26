@@ -2,8 +2,6 @@ package puzzleSiege;
 
 import javax.swing.JFrame;
 
-// TODO Image fonts for score and other text.
-
 /**
  * The wrapper that holds everything else. Contains the <code>main</code>
  * function of the program.
@@ -13,8 +11,8 @@ import javax.swing.JFrame;
  */
 public class PuzzleSiege {
 
-	public static final String SEPARATOR = java.io.File.separator;
-	public static final String PATH = "src" + SEPARATOR + "puzzleSiege"
+	public static final String SEPARATOR = java.io.File.separator;  // vague attempts at setting up for system-neutrality
+	public static final String PATH = "src" + SEPARATOR + "puzzleSiege" // no idea if it works, don't have a mac to test it on
 			+ SEPARATOR + "resources" + SEPARATOR;
 	static final String GAME_TITLE = "Game";
 	static final int WINDOW_WIDTH = 1000, WINDOW_HEIGHT = 750;
@@ -22,7 +20,7 @@ public class PuzzleSiege {
 
 	public static void main(String[] args) {
 		loadArt();
-		JFrame window = new JFrame(GAME_TITLE);
+		JFrame window = new JFrame(GAME_TITLE); // setting up JFrames
 		GameWindow content = new GameWindow();
 		window.setContentPane(content);
 		window.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);

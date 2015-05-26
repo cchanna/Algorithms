@@ -11,9 +11,6 @@ import java.util.LinkedList;
  */
 public class Horde {
 
-//	public static final int X = Board.X + Tile.SIZE * (Board.SIZE + 1);
-//	public static final int Y = Board.Y;
-
 	public static final int TIME = 8;
 	public static final int DISTANCE = (int) (1.5 * Tile.SIZE);
 	public static final int SPEED = Tile.SIZE / TIME;
@@ -23,10 +20,7 @@ public class Horde {
 
 	private LinkedList<Unit> horde;
 
-	// private Board board;
-
 	public Horde() {
-		// this.board = board;
 		horde = new LinkedList<Unit>();
 		this.frame = 0;
 		this.offset = 0;

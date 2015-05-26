@@ -16,7 +16,6 @@ public class Computer implements Actor {
 	public static final int X = Board.X + Tile.SIZE * (Board.SIZE + 1);
 	public static final int Y = Board.Y;
 
-	// protected Queue<Unit> horde; // Consider creating new data type
 	private Horde horde;
 
 	private int turn;
@@ -25,7 +24,6 @@ public class Computer implements Actor {
 
 	private Board board;
 
-	// private Choice[] choices;
 	private Swap[] choices;
 	private int numChoices;
 	private int bestScore;
@@ -43,9 +41,7 @@ public class Computer implements Actor {
 		}
 		turn = 0;
 		pause = 0;
-		// TODO Generate horde
 		this.board = board;
-		// choices = new Choice[100];
 	}
 
 	/**
