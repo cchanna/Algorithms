@@ -1,13 +1,3 @@
-/*
- *  ASSIGNMENT 1
- * 
- *	Do problem 1.1.30. Write a class RelativePrime containing a static method generateMatrix(). You may use the gcd code from p. 4 of the text. Your method should pass testRelativePrime() in the JUnit test class A1Test.
- *	Do problem 1.1.31. Write a class RandomConnections containing a static method run(). Sample output from my solution, when called with the arguments 17 and 0.25, is shown on the next page. Note that the specific lines drawn between dots will vary from one run to another. In A1Test, testRandomConnections() calls your method.
- * 	Do problem 1.1.33. Write a class Matrix containing the methods specified in the text. Tests for these methods are provided in A1Test.
- * 	Do problems 1.1.36 and 1.1.37. You have been given a class Shuffle containing the method shuffle() from p. 32. Add a second static method badShufﬂe() as described in problem 1.1.37. Add two more static methods testShufﬂe() and testBadShufﬂe() as described. A1Test has tests calling your methods. Also submit a mathematical proof that, with badShufﬂe(), “the resulting order is not equally likely to be one of the N! possibilities”.
- * 
- */
-
 package assignment1;
 
 import edu.princeton.cs.introcs.*;
@@ -15,6 +5,7 @@ import edu.princeton.cs.introcs.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import static java.util.Arrays.*;
+
 
 public class Assignment1Test {
 
